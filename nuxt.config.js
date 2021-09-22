@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'ascend-notifications',
+    title: 'nuxt-tw-gsap-system-starter',
     htmlAttrs: {
       lang: 'en',
     },
