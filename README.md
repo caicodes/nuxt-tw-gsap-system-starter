@@ -1,4 +1,4 @@
-# ascend-notifications
+# nuxt-tw-gsap-system-starter
 
 ## Build Setup
 
