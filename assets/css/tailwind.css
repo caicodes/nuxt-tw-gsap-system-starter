@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: theme(colors.coolGray.200);
+  color: theme(colors.coolGray.600);
+}
+
+html.dark {
+  background: theme(colors.coolGray.200);
+  color: theme(colors.coolGray.600);
+}
