@@ -23,7 +23,7 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'],
       },
       animation: {
-        tilt: 'tilt 10s infinite linear',
+        tilt: 'tilt 5s infinite linear',
       },
       keyframes: {
         tilt: {
@@ -31,10 +31,10 @@ module.exports = {
             transform: 'rotate(0deg)',
           },
           '25%': {
-            transform: 'rotate(1deg)',
+            transform: 'rotate(5deg)',
           },
           '75%': {
-            transform: 'rotate(-1deg)',
+            transform: 'rotate(-5deg)',
           },
         },
       },

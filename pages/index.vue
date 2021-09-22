@@ -1,64 +1,50 @@
 <template>
-  <div class="grid h-screen gap-8 place-content-center">
-    <div class="gsap__hello">hello gsap</div>
-    <div class="color__mode">
-      {{ $colorMode.value }}/{{ $colorMode.preference }}
-    </div>
-    <div class="settings__store">
-      <div
-        class="absolute grid gap-1 p-8 text-sm  top-40 left-40 bg-coolGray-700 text-coolGray-300"
-      >
-        <div class="flex justify-between px-2 py-1 bg-white bg-opacity-25">
-          <span>themeSkin: </span>
-          <span class="ml-2">{{ themeSkin }}</span>
-        </div>
-        <div class="flex justify-between px-2 py-1 bg-white bg-opacity-25">
-          <span>colorScheme: </span>
-          <span class="ml-2">{{ colorScheme }}</span>
-        </div>
-        <div class="flex justify-between px-2 py-1 bg-white bg-opacity-25">
-          <span>colorMode: </span>
-          <span class="ml-2">{{ colorMode }}</span>
-        </div>
-        <div class="flex justify-between px-2 py-1 bg-white bg-opacity-25">
-          <span>viewMode: </span>
-          <span class="ml-2">{{ viewMode }}</span>
-        </div>
+  <div class="grid h-screen gap-20 place-content-center">
+    <div class="flex flex-col items-center justify-center space-y-8 welcome">
+      <div class="flex px-2 py-1 bg-white rounded-full gsap__hello">
+        hello gsap
       </div>
+      <div class="flex color__mode">
+        {{ $colorMode.value }}/{{ $colorMode.preference }}
+      </div>
+      <div
+        class="flex items-center justify-center space-x-2  nuxt__svg animate-tilt"
+      >
+        <SiteIcon class="w-auto h-5" />
+        <SiteLogo class="h-6 w-52" />
+      </div>
+      <AppSettings />
     </div>
+    <!-- absolute postioned stuff  -->
   </div>
 </template>
 
 <script>
+import SiteIcon from '~/assets/svg/site-icon.svg?inline'
+import SiteLogo from '~/assets/svg/site-logo.svg?inline'
+import AppSettings from '~/components/AppSettings.vue'
+
 export default {
+  components: { SiteIcon, SiteLogo, AppSettings },
+
   mounted() {
     const gsap = this.$gsap
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 })
+    const tl = gsap.timeline({ repeat: -1 })
     tl.to('.gsap__hello', {
-      y: -40,
+      x: -90,
       duration: 1,
-      ease: 'power4.inOut',
-      rotate: 360,
-    }).to('.gsap__hello', {
-      y: 0,
-      duration: 1,
-      ease: 'power4.inOut',
-      rotate: -360,
+      ease: 'power2.inOut',
     })
-  },
-  computed: {
-    themeSkin() {
-      return this.$store.state.themeSkin
-    },
-    colorScheme() {
-      return this.$store.state.colorScheme
-    },
-    colorMode() {
-      return this.$store.state.colorMode
-    },
-    viewMode() {
-      return this.$store.state.viewMode
-    },
+      .to('.gsap__hello', {
+        x: 90,
+        duration: 1,
+        ease: 'power2.inOut',
+      })
+      .to('.gsap__hello', {
+        x: 0,
+        duration: 1,
+        ease: 'power2.inOut',
+      })
   },
 }
 </script>
