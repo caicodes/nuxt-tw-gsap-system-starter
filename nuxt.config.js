@@ -34,7 +34,9 @@ export default {
     '@nuxtjs/tailwindcss',
     'nuxt-gsap-module',
   ],
-
+  colorMode: {
+    classSuffix: '',
+  },
   gsap: {
     extraPlugins: {
       scrollTo: true,

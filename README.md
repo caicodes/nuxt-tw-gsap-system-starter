@@ -109,6 +109,14 @@ tailwind
 [@tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp#installation)
 [@tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio#installation)
 
+<!-- [@headlessui/vue](https://headlessui.dev/vue/menu#installation)
+
+```bash
+
+yarn add @headlessui/vue
+
+``` -->
+
 [nuxt/tailwind](https://tailwindcss.nuxtjs.org/)
 
 [@nuxtjs/svg - nuxt svg module](https://github.com/nuxt-community/svg-module#installation)

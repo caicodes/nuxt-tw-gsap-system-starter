@@ -7,7 +7,7 @@
   color: theme(colors.coolGray.400);
 }
 
-html.dark-mode {
+html.dark {
   background: theme(colors.coolGray.800);
   color: theme(colors.coolGray.600);
 }
