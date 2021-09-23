@@ -4,10 +4,10 @@
 
 :root {
   background: theme(colors.coolGray.200);
-  color: theme(colors.coolGray.600);
+  color: theme(colors.coolGray.400);
 }
 
-html.dark {
-  background: theme(colors.coolGray.200);
+html.dark-mode {
+  background: theme(colors.coolGray.800);
   color: theme(colors.coolGray.600);
 }

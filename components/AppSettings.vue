@@ -1,7 +1,7 @@
 <template>
   <div class="settings__store">
     <div
-      class="grid gap-1 p-8 text-sm rounded-lg  bg-coolGray-700 top-40 left-40 text-coolGray-300"
+      class="grid gap-1 p-8 text-sm  rounded-3xl bg-coolGray-700 top-40 left-40 text-coolGray-300"
     >
       <div class="flex justify-between px-2 py-1 bg-white bg-opacity-25">
         <span>themeSkin: </span>

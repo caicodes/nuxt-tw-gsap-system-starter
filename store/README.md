@@ -12,7 +12,7 @@ More information about the usage of this directory in [the documentation](https:
 ```js
 export const state = () => ({
   themeSkin: 'ascend',
-  colorScheme: 'ascendBlue',
+  colorScheme: 'coolGray',
   colorMode: 'system',
   viewMode: 'comfort',
 })
